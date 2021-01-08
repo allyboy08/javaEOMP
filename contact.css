@@ -161,14 +161,24 @@ ul {
 
 .company-info {
   background: lightgreen;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .company-info h3,
 .company-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+.company-info ul li:nth-child(1) .fa:hover {
+  color: green;
+}
+.company-info ul li:nth-child(2) .fa:hover {
+  color: green;
+}
+.company-info ul li:nth-child(3) .fa:hover {
+  color: green;
 }
 
 /* CONTACT */
@@ -181,7 +191,7 @@ ul {
 
 /* FORM */
 
-.contact form {
+#contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -231,8 +241,35 @@ ul {
 }
 
 /* MEDIA QUERIES */
+@media only screen and (min-width: 200px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr fr;
+    box-sizing: border-box;
+  }
+  .container {
+    box-sizing: border-box;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
 
-@media screen and (min-width: 31.42em) {
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+    box-sizing: border-box;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+/* @media screen and (min-width: 31.42em) {
   .wrapper {
     display: grid;
     grid-template-columns: 2fr fr;
@@ -260,4 +297,4 @@ ul {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
-}
+} */

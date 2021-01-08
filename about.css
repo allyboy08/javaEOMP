@@ -16,12 +16,25 @@ body {
     float: left;
     width: 50%;
   }
-  .about {
+  /* .about {
     text-align: left;
     margin-left: 10px;
-  }
+  } */
 }
 @media (min-width: 200px) and (max-width: 480px) {
+  .about {
+    color: whitesmoke;
+    font-family: "Raleway";
+    font-size: 20px;
+    line-height: 14.6667px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 0px;
+    text-align: left;
+  }
   .sidebar {
     overflow: hidden;
     background-color: darkseagreen;
@@ -90,9 +103,37 @@ body {
     display: block;
     text-align: left;
   }
+  .about {
+    color: whitesmoke;
+    font-family: "Raleway";
+    font-size: 50px;
+    line-height: 14.6667px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .about {
+    color: whitesmoke;
+    font-family: "Raleway";
+    font-size: 50px;
+    line-height: 14.6667px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: left;
+  }
   .sidebar {
     overflow: hidden;
     color: black;
@@ -148,7 +189,7 @@ body {
 .apage {
   margin-left: 80px;
 }
-.about {
+/* .about {
   color: whitesmoke;
   font-family: "Raleway";
   font-size: 50px;
@@ -159,8 +200,9 @@ body {
   padding-top: 50px;
   position: relative;
   margin-left: 80px;
+  margin-right: 80px;
   text-align: left;
-}
+} */
 h2 {
   color: whitesmoke;
   font-family: "Times New Roman", Times, serif;
@@ -170,6 +212,10 @@ h2 {
 }
 
 /*skill levels*/
+
+.title {
+  color: white;
+}
 
 .skillsbar {
   padding-bottom: 50px;
@@ -183,18 +229,18 @@ h2 {
 }
 
 .html {
-  width: 70%;
+  width: 75%;
   background-color: green;
 }
 .css {
-  width: 60%;
-  background-color: mediumturquoise;
+  width: 70%;
+  background-color: lawngreen;
 }
 .js {
-  width: 55%;
+  width: 60%;
   background-color: yellow;
 }
 .py {
   width: 60%;
-  background-color: darkcyan;
+  background-color: olive;
 }

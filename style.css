@@ -178,7 +178,8 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 100px;
-    margin-left: 70px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
   .content {
@@ -208,6 +209,7 @@ footer {
     align-items: center;
     min-height: 100px;
     margin-left: 80px;
+    margin-right: 80px;
   }
 
   .frames {
@@ -338,6 +340,7 @@ footer {
     align-items: center;
     min-height: 100px;
     margin-left: 80px;
+    margin-right: 80px;
   }
 
   .content {
