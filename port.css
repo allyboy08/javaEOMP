@@ -211,10 +211,13 @@ body {
   .card-container .card {
     border: solid 1px #f2f2f2;
     margin: 5px;
+    background-color: darkseagreen;
   }
 
   .card-container .card .card-body {
     padding: 5px;
+    color: whitesmoke;
+    text-align: center;
   }
 
   .card-container .card img.card-img {
@@ -267,10 +270,13 @@ body {
   .card-container .card {
     border: solid 1px #f2f2f2;
     margin: 5px;
+    background-color: darkseagreen;
   }
 
   .card-container .card .card-body {
     padding: 5px;
+    color: whitesmoke;
+    text-align: center;
   }
 
   .card-container .card img.card-img {
