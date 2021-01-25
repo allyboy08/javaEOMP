@@ -6,9 +6,11 @@ body {
 }
 .c {
   color: whitesmoke;
+  text-align: inherit;
 }
 .c3 {
   color: whitesmoke;
+  text-align: inherit;
 }
 @media screen and (min-width: 31.42em) {
   .c2,
@@ -71,7 +73,7 @@ body {
 @media (min-width: 481px) and (max-width: 1023px) {
   .sidebar {
     overflow: hidden;
-    background-color: lightgreen;
+    background-color: darkseagreen;
   }
 
   .sidebar a {
@@ -115,7 +117,7 @@ body {
     position: relative;
     margin-left: 80px;
     margin-right: 80px;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -132,7 +134,7 @@ body {
     position: relative;
     margin-left: 80px;
     margin-right: 80px;
-    text-align: left;
+    text-align: center;
   }
   .sidebar {
     overflow: hidden;
@@ -188,6 +190,7 @@ body {
 
 .apage {
   margin-left: 80px;
+  margin-right: 80px;
 }
 /* .about {
   color: whitesmoke;

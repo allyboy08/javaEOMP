@@ -134,6 +134,7 @@ body {
   margin-left: 80px;
   margin-right: 80px;
   padding: 1em;
+  box-sizing: border-box;
 }
 
 ul {
@@ -195,7 +196,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .contact form label {
@@ -217,6 +218,7 @@ ul {
   padding: 1em;
   border: solid 1px #627edc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .contact form textarea {
@@ -268,6 +270,15 @@ ul {
   .brand {
     text-align: left;
   }
+  .contact form button,
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #627edc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 }
 @media (min-width: 200px) and (max-width: 480px) {
   .wrapper {
@@ -289,12 +300,29 @@ ul {
   .contact {
     border-radius: 0 4px 4px 0;
     box-sizing: border-box;
+    width: 100%;
   }
 
   .company-info h3,
   .company-info ul,
   .brand {
     text-align: left;
+  }
+  .contact form button,
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #627edc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* box-sizing: border-box; */
   }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -323,5 +351,14 @@ ul {
   .company-info ul,
   .brand {
     text-align: left;
+  }
+  .contact form button,
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #627edc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
 }

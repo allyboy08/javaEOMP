@@ -4,10 +4,7 @@
 body {
   background-color: dimgray;
 }
-.ok {
-  text-align: center;
-  color: white;
-}
+
 /*navagation*/
 
 .wrapper {
@@ -126,6 +123,7 @@ body {
   }
   #testimonial {
     top: 265px;
+
     background-color: green;
     color: black;
   }
@@ -146,7 +144,7 @@ body {
 /*footer*/
 footer {
   height: 20px;
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -207,7 +205,9 @@ footer {
     position: relative;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /* min-height: 100px; */
     margin-left: 80px;
     margin-right: 80px;
   }
