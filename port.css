@@ -25,6 +25,7 @@ body {
   .sidebar a.icon {
     float: left;
     display: block;
+    color: black;
   }
   .sidebar.responsive {
     position: relative;
@@ -63,6 +64,7 @@ body {
   .sidebar a.icon {
     float: left;
     display: block;
+    color: black;
   }
   .sidebar.responsive {
     position: relative;
@@ -145,13 +147,13 @@ body {
     align-items: center;
     box-sizing: border-box;
     margin-top: 0px;
-    line-height: 30px;
+    line-height: 10px;
     margin-bottom: 10px;
   }
 
   .card-container .card {
     border: solid 1px white;
-    margin: 5px;
+    margin: 10px;
     background-color: darkseagreen;
   }
 
@@ -206,7 +208,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     margin-top: 0px;
-    line-height: 30px;
+    line-height: 10px;
     margin-bottom: 10px;
   }
 
@@ -265,7 +267,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     margin-top: 0px;
-    line-height: 30px;
+    line-height: 10px;
     margin-bottom: 10px;
   }
 
@@ -342,7 +344,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -356,7 +358,7 @@ body {
 }
 
 .close1 {
-  color: #aaaaaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -370,7 +372,7 @@ body {
 }
 
 .close2 {
-  color: #aaaaaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -384,7 +386,7 @@ body {
 }
 
 .close3 {
-  color: #aaaaaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -398,7 +400,7 @@ body {
 }
 
 .close4 {
-  color: #aaaaaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -409,4 +411,9 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: seagreen;
+  color: white;
 }

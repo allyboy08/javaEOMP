@@ -54,6 +54,7 @@ body {
   .sidebar a.icon {
     float: left;
     display: block;
+    color: black;
   }
   .sidebar.responsive {
     position: relative;
@@ -91,6 +92,7 @@ body {
   .sidebar a.icon {
     float: left;
     display: block;
+    color: black;
   }
   .sidebar.responsive {
     position: relative;

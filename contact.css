@@ -17,6 +17,7 @@
   .sidebar a.icon {
     float: left;
     display: block;
+    color: black;
   }
   .sidebar.responsive {
     position: relative;
@@ -54,6 +55,7 @@
   .sidebar a.icon {
     float: left;
     display: block;
+    color: black;
   }
   .sidebar.responsive {
     position: relative;
@@ -172,6 +174,10 @@ ul {
   margin: 0 0 1rem 0;
 }
 
+.company-info ul li i {
+  color: black;
+}
+
 .company-info ul li:nth-child(1) .fa:hover {
   color: green;
 }
@@ -205,6 +211,7 @@ ul {
 
 .contact form p {
   margin: 0;
+  width: 100%;
 }
 
 .contact form .full {
@@ -257,11 +264,12 @@ ul {
   }
 
   .company-info {
-    border-radius: 4px 0 0 4px;
+    /* border-radius: 4px 0 0 4px; */
+    border-radius: 4px;
   }
 
   .contact {
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     box-sizing: border-box;
   }
 
@@ -279,11 +287,22 @@ ul {
     border-radius: 4px;
     box-sizing: border-box;
   }
+  .company-info ul li:nth-child(1) .fa:hover {
+    color: green;
+  }
+  .company-info ul li:nth-child(2) .fa:hover {
+    color: green;
+  }
+  .company-info ul li:nth-child(3) .fa:hover {
+    color: green;
+  }
 }
 @media (min-width: 200px) and (max-width: 480px) {
   .wrapper {
     display: grid;
     grid-template-columns: 2fr fr;
+    margin-left: -20px;
+    margin-right: 90px;
     box-sizing: border-box;
   }
   .container {
@@ -294,19 +313,19 @@ ul {
   }
 
   .company-info {
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
+    width: 100%;
   }
 
   .contact {
-    border-radius: 0 4px 4px 0;
-    box-sizing: border-box;
+    border-radius: 4px;
     width: 100%;
   }
 
   .company-info h3,
   .company-info ul,
   .brand {
-    text-align: left;
+    text-align: center;
   }
   .contact form button,
   .contact form input,
@@ -322,6 +341,7 @@ ul {
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    width: 100%;
     /* box-sizing: border-box; */
   }
 }
@@ -339,18 +359,18 @@ ul {
   }
 
   .company-info {
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
   }
 
   .contact {
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     box-sizing: border-box;
   }
 
   .company-info h3,
   .company-info ul,
   .brand {
-    text-align: left;
+    text-align: center;
   }
   .contact form button,
   .contact form input,

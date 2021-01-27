@@ -29,6 +29,7 @@ body {
   .sidebar a.icon {
     float: left;
     display: block;
+    color: black;
   }
   .sidebar.responsive {
     position: relative;
@@ -66,6 +67,7 @@ body {
   .sidebar a.icon {
     float: left;
     display: block;
+    color: black;
   }
   .sidebar.responsive {
     position: relative;
@@ -350,21 +352,5 @@ footer {
     text-align: center;
     transition: 0.5s;
     z-index: 900;
-  }
-}
-/*parallax*/
-.parallax {
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
   }
 }
