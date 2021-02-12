@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="about.css" />
-    <script src="index.js"></script>
+
     <link
       rel="icon"
       type="image/png"
@@ -29,68 +29,86 @@
       </a>
     </div>
 
-    <div class="apage">
-      <div class="about">
-        <h1><u>About</u></h1>
-      </div>
-      <div class="ainfo">
-        <div class="c">
-          <h2><u>Bio</u></h2>
+    <div class="about">
+      <h1>About</h1>
+    </div>
+    <div class="container">
+      <div class="panel">
+        <img src="alex.JPG" />
+
+        <div class="content">
+          <h2>Bio</h2>
           <p>
             I am a creative, sporty and hardworking individual. I enjoy doing
             web development and have a passion for coding. I aspire to be a
-            front-end or full-stack developer.
+            front-end or full-stack developer
+            <span id="dots">.</span>
           </p>
           <p>
-            My passion for tech started at a young age with a particular
-            interest in working with machines, creating programs and code for
-            games. When I started high school I wanted to learn more about
-            computers as I believe we are going into a generation where
-            everything involves technology.
+            <span id="more">
+              My passion for tech started at a young age with a particular
+              interest in working with machines, creating programs and code for
+              games. When I started high school I wanted to learn more about
+              computers as I believe we are going into a generation where
+              everything involves technology.
+            </span>
           </p>
+          <button onclick="readFunction()" id="readBtn">Read more</button>
         </div>
-
-        <div class="c3">
-          <h2>
-            <u>Overview</u>
-          </h2>
-
+      </div>
+    </div>
+    <div class="container1">
+      <div class="card">
+        <div>
+          <h2>Overview</h2>
           <p>Full Name: Alex Sassman</p>
           <p>Date of Birth: 8 May 2001</p>
           <p>Gender: Male</p>
-          <p>School: Bergvliet High School, 2019</p>
+          <p>School: Bergvliet High School, 2015-2019</p>
           <p>Nationality: South African</p>
         </div>
       </div>
-      <br />
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <div class="c2">
-        <div class="skillsbar">
-          <h2><u>My Skills</u></h2>
-          <p class="title">HTML</p>
-          <div class="container">
-            <div class="skills html">75%</div>
-          </div>
 
-          <p class="title">CSS</p>
-          <div class="container">
-            <div class="skills css">70%</div>
-          </div>
+      <div class="card">
+        <div>
+          <h2>Hobbies</h2>
+          <p>Baseball</p>
+          <p>Softball</p>
+          <p>Hockey</p>
+          <p>Gaming</p>
+          <p>socialising</p>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="card1">
+        <div>
+          <div class="skillsbar">
+            <h2>My Skills</h2>
+            <p class="title">HTML</p>
+            <div class="container">
+              <div class="skills html">75%</div>
+            </div>
 
-          <p class="title">JavaScript</p>
-          <div class="container">
-            <div class="skills js">60%</div>
-          </div>
+            <p class="title">CSS</p>
+            <div class="container">
+              <div class="skills css">70%</div>
+            </div>
 
-          <p class="title">Python</p>
-          <div class="container">
-            <div class="skills py">60%</div>
+            <p class="title">JavaScript</p>
+            <div class="container">
+              <div class="skills js">60%</div>
+            </div>
+
+            <p class="title">Python</p>
+            <div class="container">
+              <div class="skills py">60%</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

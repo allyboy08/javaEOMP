@@ -1,11 +1,11 @@
-.landing {
-  background-color: black;
-}
 body {
-  background-color: dimgray;
+  background-color: black;
 }
 
 /*navagation*/
+.ent {
+  color: green;
+}
 
 .wrapper {
   max-width: 60em;
@@ -96,7 +96,6 @@ body {
     font-size: 20px;
     float: left;
     width: 110px;
-    color: whitesmoke;
 
     padding: 15px;
     text-decoration: none;
@@ -106,28 +105,28 @@ body {
   #home {
     top: 25px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #about {
     top: 85px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #portfolio {
     top: 145px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #contact {
     top: 205px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #testimonial {
     top: 265px;
 
     background-color: green;
-    color: black;
+    color: green;
   }
 
   .sidebar a:hover {
@@ -136,28 +135,23 @@ body {
   .sidebar .icon {
     display: none;
   }
+  #home:hover {
+    color: black;
+  }
+  #about:hover {
+    color: black;
+  }
+  #portfolio:hover {
+    color: black;
+  }
+  #contact:hover {
+    color: black;
+  }
+  #testimonial:hover {
+    color: black;
+  }
 }
-/*about page*/
-
-/* social media */
-
-/*contact*/
-
-/*footer*/
-footer {
-  height: 20px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  text-align: center;
-  right: 0;
-  padding: 0;
-}
-
-/*profile picture*/
+/*Media Query*/
 @media screen and (max-width: 600px) {
   .ok {
     display: none;
@@ -167,7 +161,7 @@ footer {
     width: 130px;
     text-align: center;
     display: block;
-    margin-left: auto;
+    margin-left: -10px;
     margin-right: auto;
     border-radius: 40%;
   }
@@ -175,11 +169,11 @@ footer {
   .profilepic {
     display: flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+
     min-height: 100px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 50px;
+    margin-right: 0px;
   }
 
   .content {
@@ -189,35 +183,69 @@ footer {
     text-align: center;
     transition: 0.5s;
     z-index: 900;
+    margin-left: -5px;
+  }
+  .info {
+    color: white;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: -240px;
+    margin-top: 300px;
+  }
+  footer {
+    font-size: 10px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    color: white;
+    text-align: center;
+    right: 0;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1024px) {
   img {
     border: 5px solid #555;
-    width: 130px;
-    text-align: center;
+    width: 190px;
+
     display: block;
-    margin-left: auto;
+    float: left;
+    margin-left: 150px;
     margin-right: auto;
     border-radius: 40%;
   }
 
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    right: 0;
+    padding: 0;
+  }
   .profilepic {
     display: flex;
+
     position: relative;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
-    /* min-height: 100px; */
-    margin-left: 80px;
+
+    margin-left: 150px;
     margin-right: 80px;
   }
 
   .frames {
     position: relative;
     margin: 0 10px;
-    width: 350px;
+    width: 300px;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -228,7 +256,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 150%;
     height: 100%;
     border: 2px solid green;
     border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
@@ -245,7 +273,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 150%;
     height: 100%;
     border: 2px solid green;
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
@@ -262,7 +290,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 150%;
     height: 100%;
     border: 2px solid green;
     border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
@@ -279,7 +307,7 @@ footer {
     position: relative;
     padding: 40px 60px;
     color: black;
-    text-align: center;
+
     transition: 0.5s;
     z-index: 900;
   }
@@ -301,6 +329,13 @@ footer {
   .content a:hover {
     background: black;
     color: white;
+  }
+  .info {
+    font-size: larger;
+    color: white;
+    margin-left: 200px;
+    padding-left: 10px;
+    text-align: center;
   }
 
   @keyframes animate {
@@ -334,7 +369,14 @@ footer {
     margin-right: auto;
     border-radius: 40%;
   }
+  .info {
+    font-size: larger;
+    color: white;
 
+    margin-top: 600px;
+    position: absolute;
+    text-align: center;
+  }
   .profilepic {
     display: flex;
     position: relative;
@@ -343,6 +385,7 @@ footer {
     min-height: 100px;
     margin-left: 80px;
     margin-right: 80px;
+    margin-top: 80px;
   }
 
   .content {
@@ -352,5 +395,70 @@ footer {
     text-align: center;
     transition: 0.5s;
     z-index: 900;
+  }
+  footer {
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    right: 0;
+    padding: 0;
+  }
+  .frames {
+    position: relative;
+    margin: 0 10px;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .frames span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border: 2px solid #008337;
+    border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+
+    margin-top: 30px;
+  }
+
+  .frames span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border: 2px solid #dddc42;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+    margin-top: 30px;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes animate2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 }

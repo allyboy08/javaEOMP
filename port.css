@@ -1,10 +1,5 @@
 body {
-  /* display: inline; */
   background-color: black;
-  /* min-height: 100vh;*/
-
-  align-items: center;
-  justify-content: center;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -104,27 +99,28 @@ body {
   #home {
     top: 25px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #about {
     top: 85px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #portfolio {
     top: 145px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #contact {
     top: 205px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #testimonial {
     top: 265px;
+
     background-color: green;
-    color: black;
+    color: green;
   }
 
   .sidebar a:hover {
@@ -133,14 +129,30 @@ body {
   .sidebar .icon {
     display: none;
   }
+  #home:hover {
+    color: black;
+  }
+  #about:hover {
+    color: black;
+  }
+  #portfolio:hover {
+    color: black;
+  }
+  #contact:hover {
+    color: black;
+  }
+  #testimonial:hover {
+    color: black;
+  }
 }
 /*card*/
 @media screen and (min-width: 1024px) {
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    width: 1300px;
-    margin-left: 0px;
+
+    margin-left: 85px;
+    margin-right: 85px;
     padding: 50px;
     align-content: center;
     justify-content: center;
@@ -194,6 +206,33 @@ body {
     align-content: center;
     padding: 10px;
   }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .port {
+    color: whitesmoke;
+    font-family: "Raleway";
+    font-size: 50px;
+    line-height: 14.6667px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+  }
 }
 /*media query*/
 @media (min-width: 200px) and (max-width: 480px) {
@@ -201,7 +240,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 200px;
-    margin-left: -25px;
+    margin-left: -20px;
     padding: 50px;
     align-content: center;
     justify-content: left;
@@ -222,13 +261,15 @@ body {
     padding: 5px;
     color: whitesmoke;
     text-align: center;
+    line-height: 15px;
   }
 
   .card-container .card img.card-img {
     height: 200px;
-    width: 290px;
+    width: 240px;
     object-position: center;
   }
+
   button {
     border: none;
     outline: 0;
@@ -254,14 +295,22 @@ body {
     align-content: center;
     padding: 10px;
   }
+
+  .port {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 20px;
+  }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   .card-container {
     display: flex;
     flex-wrap: wrap;
     width: 300px;
-    margin-left: 200px;
-    padding: 50px;
+
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -273,7 +322,10 @@ body {
 
   .card-container .card {
     border: solid 1px #f2f2f2;
-    margin: 5px;
+
+    margin-left: 450px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: darkseagreen;
   }
 
@@ -281,6 +333,7 @@ body {
     padding: 5px;
     color: whitesmoke;
     text-align: center;
+    line-height: 15px;
   }
 
   .card-container .card img.card-img {
@@ -313,23 +366,74 @@ body {
     align-content: center;
     padding: 10px;
   }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    color: black;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .port {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 20px;
+  }
 }
 
 /* modal */
-
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#myBtn2 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+#vbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+#cbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
 }
 
 /* Modal Content */
@@ -339,7 +443,7 @@ body {
   color: black;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
 }
 
 /* The Close Button */
@@ -348,6 +452,8 @@ body {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-top: 18px;
+  margin-left: 10px;
 }
 
 .close:hover,
@@ -362,6 +468,8 @@ body {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-top: 18px;
+  margin-left: 10px;
 }
 
 .close1:hover,
@@ -376,6 +484,8 @@ body {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-top: 18px;
+  margin-left: 10px;
 }
 
 .close2:hover,
@@ -390,6 +500,8 @@ body {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-top: 18px;
+  margin-left: 10px;
 }
 
 .close3:hover,
@@ -404,6 +516,8 @@ body {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-top: 18px;
+  margin-left: 10px;
 }
 
 .close4:hover,

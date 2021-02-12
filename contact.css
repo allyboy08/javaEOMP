@@ -94,27 +94,28 @@
   #home {
     top: 25px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #about {
     top: 85px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #portfolio {
     top: 145px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #contact {
     top: 205px;
     background-color: green;
-    color: black;
+    color: green;
   }
   #testimonial {
     top: 265px;
+
     background-color: green;
-    color: black;
+    color: green;
   }
 
   .sidebar a:hover {
@@ -123,8 +124,22 @@
   .sidebar .icon {
     display: none;
   }
+  #home:hover {
+    color: black;
+  }
+  #about:hover {
+    color: black;
+  }
+  #portfolio:hover {
+    color: black;
+  }
+  #contact:hover {
+    color: black;
+  }
+  #testimonial:hover {
+    color: black;
+  }
 }
-/*social*/
 
 /*contact*/
 
@@ -132,9 +147,8 @@ body {
   background: black;
 }
 .container {
-  max-width: 1170px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 150px;
+  margin-right: 150px;
   padding: 1em;
   box-sizing: border-box;
 }
@@ -143,21 +157,6 @@ ul {
   list-style: none;
   padding: 0;
   font-size: 25px;
-}
-
-.brand {
-  text-align: center;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.brand span {
-  color: #ffffff;
-}
-
-.wrapper > * {
-  padding: 1em;
 }
 
 /* COMPANY INFORMATION */
@@ -202,7 +201,6 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  /* box-sizing: border-box; */
 }
 
 .contact form label {
@@ -264,7 +262,6 @@ ul {
   }
 
   .company-info {
-    /* border-radius: 4px 0 0 4px; */
     border-radius: 4px;
   }
 
@@ -296,12 +293,26 @@ ul {
   .company-info ul li:nth-child(3) .fa:hover {
     color: green;
   }
+  .brand {
+    color: whitesmoke;
+    font-family: "Raleway";
+    font-size: 50px;
+    line-height: 14.6667px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+  }
 }
 @media (min-width: 200px) and (max-width: 480px) {
   .wrapper {
     display: grid;
     grid-template-columns: 2fr fr;
-    margin-left: -20px;
+    margin-left: -115px;
     margin-right: 90px;
     box-sizing: border-box;
   }
@@ -323,8 +334,7 @@ ul {
   }
 
   .company-info h3,
-  .company-info ul,
-  .brand {
+  .company-info ul {
     text-align: center;
   }
   .contact form button,
@@ -342,14 +352,25 @@ ul {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     width: 100%;
-    /* box-sizing: border-box; */
+  }
+  .brand {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 15px;
+    margin-left: -130px;
+    margin-right: -115px;
   }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   .wrapper {
     display: grid;
-    grid-template-columns: 2fr fr;
+
     box-sizing: border-box;
+    margin-left: -90px;
+    margin-right: -90px;
   }
   .container {
     box-sizing: border-box;
@@ -368,8 +389,7 @@ ul {
   }
 
   .company-info h3,
-  .company-info ul,
-  .brand {
+  .company-info ul {
     text-align: center;
   }
   .contact form button,
@@ -380,5 +400,13 @@ ul {
     border: solid 1px #627edc;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  .brand {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 20px;
   }
 }

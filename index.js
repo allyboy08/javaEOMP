@@ -1,4 +1,3 @@
-//alert("Welcome!")
 function myFunction() {
   var x = document.getElementById("mysidebar");
   if (x.className === "sidebar") {
@@ -15,21 +14,21 @@ var modal2 = document.getElementById("myModal2");
 var modal3 = document.getElementById("myModal3");
 var modal4 = document.getElementById("myModal4");
 
-// Get the button that opens the modal
+// open modal
 var btn = document.getElementById("myBtn");
 var btn1 = document.getElementById("myBtn1");
 var btn2 = document.getElementById("myBtn2");
 var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
 
-// Get the <span> element that closes the modal
+// close modal
 var span = document.getElementsByClassName("close")[0];
 var span1 = document.getElementsByClassName("close1")[0];
 var span2 = document.getElementsByClassName("close2")[0];
 var span3 = document.getElementsByClassName("close3")[0];
 var span4 = document.getElementsByClassName("close4")[0];
 
-// When the user clicks the button, open the modal
+// open button
 btn.onclick = function () {
   modal.style.display = "block";
 };
@@ -46,7 +45,7 @@ btn4.onclick = function () {
   modal4.style.display = "block";
 };
 
-// When the user clicks on <span> (x), close the modal
+// close button
 span.onclick = function () {
   modal.style.display = "none";
 };
@@ -63,19 +62,18 @@ span4.onclick = function () {
   modal4.style.display = "none";
 };
 
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
-// window.onclick = function (event) {
-//   if (event.target == modal1) {
-//     modal1.style.display = "none";
-//   }
-// };
-// window.onclick = function (event) {
-//   if (event.target == modal2) {
-//     modal2.style.display = "none";
-//   }
-// };
+function readFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
