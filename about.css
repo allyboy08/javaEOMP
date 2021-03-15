@@ -208,15 +208,15 @@ body {
 }
 
 .html {
-  width: 75%;
+  width: 80%;
   background-color: green;
 }
 .css {
-  width: 70%;
+  width: 75%;
   background-color: lawngreen;
 }
 .js {
-  width: 60%;
+  width: 70%;
   background-color: yellow;
 }
 .py {
