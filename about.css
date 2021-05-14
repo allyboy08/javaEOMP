@@ -204,6 +204,9 @@ body {
   text-align: right;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: transparent;
+}
+.container2 .card1:hover .skills {
   color: black;
 }
 
@@ -216,11 +219,11 @@ body {
   background-color: lawngreen;
 }
 .js {
-  width: 70%;
+  width: 65%;
   background-color: yellow;
 }
 .py {
-  width: 60%;
+  width: 75%;
   background-color: olive;
 }
 
@@ -228,7 +231,6 @@ body {
   .container {
     position: relative;
 
-    background: white;
     border: none;
     margin-left: 150px;
 
@@ -524,6 +526,12 @@ body {
     padding-bottom: 50px;
     margin-left: 10px;
   }
+  .skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+  }
   .container1 {
     box-sizing: border-box;
     color: white;
@@ -603,6 +611,12 @@ body {
   .skillsbar {
     padding-bottom: 50px;
     margin-left: 10px;
+  }
+  .skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
   }
   .container1 {
     box-sizing: border-box;
