@@ -198,6 +198,7 @@ body {
 
 .title {
   color: white;
+  text-align: left;
 }
 
 .skills {
@@ -225,6 +226,10 @@ body {
 .py {
   width: 75%;
   background-color: olive;
+}
+.qa {
+  width: 50%;
+  background-color: mediumseagreen;
 }
 
 @media screen and (min-width: 1024px) {
