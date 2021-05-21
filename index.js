@@ -13,6 +13,7 @@ var modal1 = document.getElementById("myModal1");
 var modal2 = document.getElementById("myModal2");
 var modal3 = document.getElementById("myModal3");
 var modal4 = document.getElementById("myModal4");
+var modal5 = document.getElementById("myModal5");
 
 // open modal
 var btn = document.getElementById("myBtn");
@@ -20,6 +21,7 @@ var btn1 = document.getElementById("myBtn1");
 var btn2 = document.getElementById("myBtn2");
 var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
+var btn5 = document.getElementById("myBtn5");
 
 // close modal
 var span = document.getElementsByClassName("close")[0];
@@ -27,6 +29,7 @@ var span1 = document.getElementsByClassName("close1")[0];
 var span2 = document.getElementsByClassName("close2")[0];
 var span3 = document.getElementsByClassName("close3")[0];
 var span4 = document.getElementsByClassName("close4")[0];
+var span5 = document.getElementsByClassName("close5")[0];
 
 // open button
 btn.onclick = function () {
@@ -44,6 +47,9 @@ btn3.onclick = function () {
 btn4.onclick = function () {
   modal4.style.display = "block";
 };
+btn5.onclick = function () {
+  modal5.style.display = "block";
+};
 
 // close button
 span.onclick = function () {
@@ -60,6 +66,9 @@ span3.onclick = function () {
 };
 span4.onclick = function () {
   modal4.style.display = "none";
+};
+span5.onclick = function () {
+  modal5.style.display = "none";
 };
 
 function readFunction() {
