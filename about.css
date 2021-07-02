@@ -228,8 +228,12 @@ body {
   background-color: olive;
 }
 .ms {
-  width: 50%;
+  width: 60%;
   background-color: mediumseagreen;
+}
+.qa {
+  width: 60%;
+  background-color: maroon;
 }
 
 @media screen and (min-width: 1024px) {
