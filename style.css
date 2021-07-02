@@ -1,7 +1,11 @@
 body {
   background-color: black;
 }
-
+.typing {
+  color: orangered;
+  /* font-weight: 500; */
+  /* text-shadow: 2px 2px 8px; */
+}
 /*navagation*/
 .ent {
   color: green;
@@ -331,9 +335,9 @@ body {
     color: white;
   }
   .info {
-    font-size: larger;
+    font-size: large;
     color: white;
-    margin-left: 200px;
+    margin-left: 205px;
     padding-left: 10px;
     text-align: center;
   }

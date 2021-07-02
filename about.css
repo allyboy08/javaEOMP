@@ -233,7 +233,7 @@ body {
 }
 .qa {
   width: 60%;
-  background-color: maroon;
+  background-color: chocolate;
 }
 
 @media screen and (min-width: 1024px) {
